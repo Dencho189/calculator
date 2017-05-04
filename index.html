@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="icon" href="img/">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrap_block gradient">
+        <div class="screen">
+            <div id="operation"></div>
+            <div id="mem">M</div>
+            <input type="text" name="screen" id="screen" placeholder="" disabled>
+        </div>
+
+        <div class="numbers button">
+            <ul>
+
+                <li class="m_b memory" data-memory="clear">mc</li>
+                <li class="m_b memory" data-memory="read">mr</li>
+                <li class="m_b memory" data-memory="save">ms</li>
+
+                <li id="backspace" class="m_b">&larr;</li>
+                <li id="clear_ce" class="m_b">ce</li>
+                <li id="clear_c" class="m_b">c</li>
+
+
+                <li class="digit">7</li>
+                <li class="digit">8</li>
+                <li class="digit">9</li>
+                <li class="digit">4</li>
+                <li class="digit">5</li>
+                <li class="digit">6</li>
+                <li class="digit">1</li>
+                <li class="digit">2</li>
+                <li class="digit">3</li>
+                <li class="digit" id="zero">0</li>
+                <li id="point">.</li>
+            </ul>
+        </div>
+        <div class="arithmetic_block block_simple button">
+            <ul>
+                <li class="m_b memory" data-memory="in_a">m+</li>
+                <li class="m_b memory" data-memory="in_b">m-</li>
+
+                <li id="change" class="p_m">+</li>
+                <li id="sqrt" class="arithmetic_operation">sqrt</li>
+
+                <li class="arithmetic_operation">/</li>
+                <li class="arithmetic_operation">%</li>
+                <li class="arithmetic_operation">*</li>
+                <li class="arithmetic_operation">1/x</li>
+                <li class="arithmetic_operation">-</li>
+                <li id="equal">=</li>
+                <li id="plus" class="arithmetic_operation">+</li>
+            </ul>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>
